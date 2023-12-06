@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+
+<body>
+    <!-- TODO: TITULO PRINCIPAL -->
+    <h1>Introdução ao HTML</h1>
+    <hr>
+
+    <!-- TODO: INDICE -->
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#explicacao_html">O que é HTML?</a></li>
+        <li><a href="#anatomia_tag">Anatomia das Tags</a></li>
+        <li><a href="#estrutura_basica">Estrutura Básica</a></li>
+        <li><a href="#imagens">Imagens</a></li>
+        <li><a href="#titulos_subtitulos">Titulos e Subtitulos</a></li>
+        <li><a href="#listas">Listas</a></li>
+    </ul>
+
+    <!-- TODO: EXPLICAÇÃO HTML -->
+    <h2 id="explicacao_html">O Que é HTML?</h2>
+    <p>HTML <strong>(HyperText Markup Language)</strong> é uma <u>linguagem de marcação de hipertexto</u> usada para
+        definir a estrutura da página web,
+        atráves dos elementos são feitas as marcações que delimita o conteúdo da página.</p>
+    <p>As tags são usados para definir o tipo do conteúdo para o navegador. É possível colocar um texto dentro de uma
+        tag
+        de título, mas não é recomendável.</p>
+
+    <br>
+    <!-- TODO: ANATOMIA DAS TAGS -->
+    <h2 id="anatomia_tag">Anatomia das Tags</h2>
+    <img src="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics/gato-rabujento-pequeno.png"
+        width="40%">
+    <p><strong>Tag de abertura:</strong> Consiste no nome do elemento envolvido em sinais de maior e menor. </p>
+    <p><strong>Tag de fechamento:</strong> Mesma estrutura da tag de abertura, mas inclui uma barra antes do nome do
+        elemento.</p>
+    <p><strong>Conteúdo:</strong> É o conteúdo do elemento, que no exemplo é um texto.</p>
+    <p><strong>Elemento:</strong> É a estrutura completa como um todo da tag.</p>
+
+    <br>
+
+    <p><strong>Elementos podem ter atributos</strong>, que no caso o elemento <strong>class</strong> permite valores
+        de estilização onde posteriormente pode ser alterado no CSS:</p>
+    <img src="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics/gato-rabujento-atributo-pequeno.png"
+        width="40%">
+
+
+    <!-- TODO: ESTRUTURA BASICA -->
+    <h2 id="estrutura_basica">Estrutura Básica</h2>
+    <img src="img/img-estrutura_html.png" width="40%">
+    <ul>
+        <li><p><strong>Elemento html</strong> envolve todo o conteúdo da página.</p></li>
+        <li><p><strong>Elemento head</strong> recebe na página HTML conteúdos que não serão mostrados pro Usuário sendo no máximo um title da página.</p></li>
+        <li><p><strong>Elemento meta charset utf-8</strong> inclui todos os caracteres dos idiomas existentes.</p></li>
+        <li><p><strong>Elemento title</strong> define o titulo que aparece na aba do navegador.</p></li>
+        <li><p><strong>Elemento body</strong> contém todo o conteúdo mostrado aos usuários, podendo ser imagens, textos, videos entre outros.  </p></li>
+    </ul>
+    
+    <!-- TODO: IMAGENS -->
+    <h2 id="imagens">Imagens</h2>
+    <img src="img/img-image_html.png" alt="Imagem da tag img de Exemplo" width="40%">
+    <p>A tag <strong>img</strong> integra imagens na página Web, que através do atributo <strong>src</strong> é direcionado o caminho onde essa imagem está armazenada, podendo ser no próprio projeto com o caminho ou através de links de imagens da web.</p>
+    <p>O atributo <strong>alt</strong> especifica <strong>textos discritivos</strong> para usuários que não conseguem ver a imagem, <strong>exemplos:</strong></p>
+    <ol>
+        <li>Devido a <strong>deficiencia visual</strong>, onde esses usuários usam <strong>ferramentas de leitura de tela</strong> para ler o texto.</li>
+        <li><strong>Imagem não carregada</strong>, podendo ser causado por conta da imagem não estar armazenado no projeto ou a imagem da web foi retirada de ar.</li>
+    </ol>
+
+    <!-- TODO: TITULOS E SUBTITULOS -->
+    <h2 id="titulos_subtitulos">Títulos e Subtitulos</h2>
+    <img src="img/img-titulo.png" alt="Imagem da tag h1 até h6 de Exemplo" width="40%">
+    <p>Tags de título são elementos que possuem <strong>níveis de prioridade</strong>, onde <strong>h1 é o titulo principal</strong> da página e de <strong>h2 até h6 sendo subtitulos.</strong></p>
+
+    <!-- TODO: LISTA ORDENADAS E NÃO ORDENADAS -->
+    <h2 id="listas">Listas</h2>
+    <p>Existem dois tipos comuns de Listas no HTML, que são <strong>listas ordenadas e não ordenadas.</strong></p>
+    <ul>
+        <li>
+            <p><strong>Listas não ordenadas</strong> a ordem dos itens <strong>não importa</strong>, sendo representado pelo elemento <strong>ul.</strong></p>
+            <img src="img/img-listaNaoOrdenada.png" width="30%">
+        </li>
+        <li>
+            <p><strong>Listas ordenadas</strong> a ordem dos <strong>itens importa</strong>, sendo representado pelo elemento <strong>ol.</strong></p>
+            <img src="img/img-listaOrdenada.png" width="30%">
+        </li>
+        <li>
+            <p>Quando for digitado os itens da lista, cada um desses itens é preciso ser colocado dentro da tag <strong>li</strong>, tag essa que representa cada um dos itens.</p>
+        </li>
+    </ul>
+</body>
+
+</html>
